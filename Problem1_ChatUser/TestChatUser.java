@@ -1,5 +1,3 @@
-package Homework;
-
 public class TestChatUser {
     public static void main(String[]args){
         ChatUser u1 = new ChatUser("JonathanD",31);

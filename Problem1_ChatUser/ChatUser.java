@@ -1,5 +1,3 @@
-package Homework;
-
 public class ChatUser {
     private String nickname, location;
     private int age;
