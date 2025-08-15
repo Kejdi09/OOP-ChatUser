@@ -32,4 +32,14 @@ public class Computer {
 
     public double getPrice(){ return price; }
     public void setPrice(double price){ if (price >= 0) this.price = price; }
+
+
+    @Override
+    public String toString() {
+        return "Computer assembled in " + assembled_year + ", priced at $" + price + "\n" +
+                "CPU: " + cpu.toString() + "\n" +
+                "RAM: " + ram.toString() + "\n" +
+                "Hard Disk: " + hard_disk.toString() + "\n" +
+                "Motherboard: " + motherboard.toString();
+    }
 }

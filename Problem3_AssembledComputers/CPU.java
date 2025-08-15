@@ -44,4 +44,10 @@ public class CPU {
     public void setManufacturer(String manufacturer){
         this.manufacturer = manufacturer.toUpperCase();
     }
+
+    @Override
+    public String toString() {
+        return clockFreq + " GHz, " + ISA + ", " + type + " bit, "
+                + numberOfRegisters + " registers, " + manufacturer;
+    }
 }

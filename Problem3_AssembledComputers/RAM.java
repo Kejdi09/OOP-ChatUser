@@ -16,4 +16,9 @@ public class RAM {
     public String getManufacturer(){ return manufacturer; }
     public void setManufacturer(String manufacturer){ this.manufacturer = manufacturer; }
 
+
+    @Override
+    public String toString() {
+        return size + " GB, " + type + ", " + manufacturer;
+    }
 }

@@ -15,4 +15,11 @@ public class HardDisk {
 
     public String getManufacturer(){ return manufacturer;}
     public void setManufacturer(String manufacturer){ this.manufacturer = manufacturer;}
+
+
+
+    @Override
+    public String toString() {
+        return size + " GB, " + rpm + " RPM, " + manufacturer;
+    }
 }
