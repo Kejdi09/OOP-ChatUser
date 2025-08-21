@@ -1,6 +1,3 @@
-
-
-import java.io.PrintStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.UUID;
@@ -17,7 +14,7 @@ public class Invoice {
 
     Invoice() {
         this.due_date = this.invoice_date.plusDays(7L);
-        this.list = new ArrayList();
+        this.list = new ArrayList<>();
         this.VAT = (double)0.0F;
         this.discount = (double)0.0F;
         this.total_cost = (double)0.0F;
@@ -25,7 +22,7 @@ public class Invoice {
 
     Invoice(LocalDate due_date, Customer customer) {
         this.due_date = due_date;
-        this.list = new ArrayList();
+        this.list = new ArrayList<>();
         this.customer = customer;
         this.total_cost = this.calculateTotal_cost(this.list);
         this.VAT = 0.2 * this.total_cost;
